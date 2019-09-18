@@ -1,0 +1,112 @@
+.header {}
+.menu-top {
+  background-color: $blackMenu;
+  &__left {
+    padding-right: 0;
+  }
+  &__right {
+    padding-left: 0;
+  }
+  &__links {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    padding: 7px 0;
+    margin-bottom: 0;
+    &_personal {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+  &__item {
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+  }
+  &__link {
+    color: $whiteLink;
+    font-style: normal;
+    line-height: normal;
+    font-size: 15px;
+    display: inline-block;
+    &:hover {
+      color: $orangeLink;
+      transition: all 250ms ease;
+      text-decoration: underline;
+    }
+    &_active {
+      text-decoration: underline;
+    }
+    &_login {
+      position: relative;
+      .svg-sprite-icon {
+        margin-right: 5px;
+        vertical-align: -2px;
+      }
+    }
+  }
+}
+
+.header-middle {
+  position: relative;
+  background-color: $whiteMenu;
+  @include shadow_line_back();
+}
+.header-middle-wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-logo {
+  background-color: $orangeBack;
+  padding: 19px 20px;
+}
+.header-links {
+  &__link {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: $blackLink;
+    font-size: 17px;
+    display: inline-block;
+    text-align: center;
+    &_active {
+      font-weight: 600;
+    }
+    &:hover{
+      text-decoration: none;
+      color: $orangeLink;
+    }
+  }
+}
+.header-contact {
+  text-align: center;
+  &__phone {}
+  &__phone-link {
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 24px;
+    text-decoration: none;
+    color: $blackLink;
+    &:hover{
+      text-decoration: none;
+      color: $orangeLink;
+    }
+  }
+  &__call {}
+  &__call-link {
+    font-style: normal;
+    line-height: normal;
+    font-size: 16px;
+    color: $orangeLink;
+    text-decoration: none;
+    border-bottom: 2px dotted $orangeLink;
+    margin-left: 10px;
+    &:hover{
+      text-decoration: none;
+      color: $blackLink;
+      border-bottom: 2px dotted $blackLink;
+    }
+  }
+}

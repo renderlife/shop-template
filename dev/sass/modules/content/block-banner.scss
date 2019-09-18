@@ -1,0 +1,37 @@
+.catalog-detail-action {
+  &__item {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    /*border: 2px solid #f15a24;
+    padding-top: 10px;*/
+    .stretched-link::after {
+      margin: 0 15px;
+    }
+  }
+  &__info {
+    background: $orangeMegaLite;
+    margin: 0 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  &__title-action {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  &__desc {
+    font-size: 12px;
+    line-height: 15px;
+    color: $black37;
+    margin-bottom: 5px;
+  }
+  &__price {
+    font-size: 16px;
+    &_value {
+      font-weight: 600;
+    }
+    &_type {
+      font-size: 16px;
+      color: $grayTextBackWhite;
+    }
+  }
+}

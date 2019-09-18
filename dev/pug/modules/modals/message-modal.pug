@@ -1,0 +1,32 @@
+#messageModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered(role='document')
+    .modal-content
+      .modal-header
+        .h1.modal-title Сообщение
+        button.close(type='button', data-dismiss='modal', aria-label='Закрыть')
+          span(aria-hidden='true') ×
+      .modal-body
+        form.js-message-modal-form(novalidate)
+          .form-group
+            label
+              input.form-control(required type='text', placeholder='Ваше имя', name='name')
+              .valid-feedback Все верно!
+              .invalid-feedback Пожалуйста введите имя
+
+          .form-group
+            label
+              input.form-control(required type='tel', pattern="[0-9-+() ]{5,20}", placeholder='Телефон', name='phone')
+              .valid-feedback Все верно!
+              .invalid-feedback Пожалуйста введите телефон от 5 до 20 символов
+
+          .form-group
+            label
+              textarea.form-control(required name='message' placeholder='Введите сообщение' rows="5")
+              .valid-feedback Все верно!
+              .invalid-feedback Пожалуйста введите текст сообщения
+
+          .form-group
+            button.w-100.btn.btn-success.js-message-modal-button(type='submit') Отправить
+
+          .iagreeText Нажимая кнопку «Отправить» Вы соглашаетесь на обработку персональных данных согласно&nbsp;
+              a(class="links" href="#") пользовательского соглашения

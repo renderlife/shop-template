@@ -1,0 +1,32 @@
+.white-block.white-block_30.catalog-detail-interested
+  .row
+    .col-12.catalog-detail-interested__title-block
+      .h2 Возможно, вас также заинтересует
+
+    each numPhoto in [1, 2, 3, 4]
+      if numPhoto === 4
+        - var hide = "d-none d-lg-block"
+      else
+        - var hide = ""
+      .col-12.col-md-4.col-lg-3.catalog-detail-interested__item(class=hide)
+        .row.position-static
+          a.stretched-link(href="#")
+          .col-12
+            - path = "static/images/general/action-hata-" + numPhoto + ".jpg"
+            a.catalog-detail-interested__image-wrap(href="#")
+              img.img-fluid.catalog-detail-interested__image(src=path)
+
+          .col-12
+            a.h3.catalog-detail-interested__title-item(href="#")
+              | 1-комн. кв., 33 м2 , 3/9 этаж
+
+          .col-12
+            .catalog-detail-interested__desc
+              | г. Ялта, кондиционер, 4 спальных места, беседка, мангал, песчаный пляж, завтраки
+
+          .col-12
+            - var price = Math.floor(Math.random() * (15 - 1300) + 1300)
+            .catalog-detail-action__price
+              span.catalog-detail-action__price_value #{price}
+              span.catalog-detail-action__price_rubl.rubl.pl-1 q
+              span.catalog-detail-action__price_type  / сутки

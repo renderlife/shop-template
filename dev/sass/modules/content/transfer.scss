@@ -1,0 +1,14 @@
+.transfer {
+  .table .thead-dark.thead-orange th {
+      color: #fff;
+      background-color: $orange;
+      border-color: $orange;
+  }
+  &__text-content-bottom {
+
+  }
+  &__message-order-content-bottom {
+    font-size: 20px;
+    text-align: center;
+  }
+}

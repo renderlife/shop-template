@@ -1,0 +1,112 @@
+.filter-back
+  .main-filter-wrap
+    .container
+      .row
+        .col-12
+          .slogan-main
+            span Более 600
+            br.d-block.d-lg-none
+            span &nbsp;проверенных квартир
+            br.d-none.d-sm-block.d-md-block.d-lg-none
+            span  в&nbsp;Ялте
+        .col-12
+          form.main-filter
+            .form-row.justify-content-center
+              //.col-12.col-sm-6.col-md-2.col-lg-2.main-filter__item.main-filter__item_type.order-sm-1.order-md-1.order-lg-1
+                .custom-select-wrap
+                  .bootstrap-select.form-control.js-bootstrap-select-fake
+                    button.btn.dropdown-toggle.bs-placeholder.btn-light(type='button', data-toggle='dropdown', role='button', title='Тип жилья', aria-expanded='false')
+                      .filter-option
+                        .filter-option-inner
+                          .filter-option-inner-inner Тип жилья
+
+                  select.form-control.custom-select.main-filter__custom-select.inner-filter__type.selectpicker(multiple name="type" title="Тип жилья")
+                    option(value='apartment') Квартира
+                    option(value='hotel_room') Номер в отеле
+                    option(value='house') Дом, коттедж
+                    option(value='room') Комната
+                    option(value='hostel') Хостел
+
+              .col-6.col-sm-6.col-md-3.col-lg-2.main-filter__item.main-filter__item_rooms.order-sm-1.order-md-1.order-lg-1
+                .custom-select-wrap
+                  .bootstrap-select.form-control.js-bootstrap-select-fake
+                    button.btn.dropdown-toggle.bs-placeholder.btn-light(type='button', data-toggle='dropdown', role='button', title='Кол-во комнат', aria-expanded='false')
+                      .filter-option
+                        .filter-option-main
+                          .filter-option-main-main Кол-во комнат
+
+                  select.form-control.custom-select.main-filter__custom-select.inner-filter__rooms.selectpicker(multiple name="rooms" title="Кол-во комнат")
+                    option(value='studia') Студия
+                    option(value='1') 1 комнатная
+                    option(value='2') 2 комнатная
+                    option(value='3') 3 комнатная
+                    option(value='4') 4 комнатная
+                    option(value='5') 5+ комнатные
+
+              .col-6.col-sm-6.col-md-3.col-lg-2.main-filter__item.main-filter__item_berth.order-sm-1.order-md-1.order-lg-1
+                .custom-select-wrap
+                  select.custom-select.main-filter__custom-select.main-filter__berth(name="berth")
+                    option(selected='' value='') Спальных мест
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+                    option(value='6') 6
+                    option(value='7') 7
+                    option(value='8') 8
+                    option(value='9') 9
+                    option(value='10') 10
+                    option(value='11') 11
+                    option(value='12') 12
+                    option(value='13') 13
+                    option(value='14') 14
+                    option(value='15') 15
+                    option(value='16') 16
+                    option(value='17') 17
+                    option(value='18') 18
+                    option(value='19') 19
+                    option(value='20') 20
+
+              //.col-12.col-sm-6.col-md-2.col-lg-2.main-filter__item.main-filter__item_berth.order-sm-1.order-md-1.order-lg-1
+                .custom-select-wrap
+                  .bootstrap-select.form-control.js-bootstrap-select-fake
+                    button.btn.dropdown-toggle.bs-placeholder.btn-light(type='button', data-toggle='dropdown', role='button', title='Спальных мест', aria-expanded='false')
+                      .filter-option
+                        .filter-option-inner
+                          .filter-option-inner-inner Спальных мест
+
+                  select.form-control.custom-select.main-filter__custom-select.inner-filter__berth.selectpicker(multiple name="berth" title="Спальных мест")
+                    option(value='1') 1
+                    option(value='2') 2
+                    option(value='3') 3
+                    option(value='4') 4
+                    option(value='5') 5
+
+              .col-6.col-md-3.col-lg-2.main-filter__item.main-filter__item_price-from.order-sm-2.order-lg-1
+                .input-wrap.icon-wrap.icon-wrap_left
+                  +icon('ruble', 'filter')
+                  input.form-control.main-filter__input.main-filter__price(type='tel', name="price_from", placeholder='Цена от', autocomplete='off')
+
+              .col-6.col-md-3.col-lg-2.main-filter__item.main-filter__item_price-to.order-sm-2.order-lg-1
+                .input-wrap.icon-wrap.icon-wrap_left
+                  +icon('ruble', 'filter')
+                  input.form-control.main-filter__input.main-filter__price-to(type='tel', name="price_to", placeholder='Цена до', autocomplete='off')
+
+              .col-12.col-md-6.col-lg-2.main-filter__item.main-filter__item_date-from-to.order-lg-1
+                .input-wrap.icon-wrap.icon-wrap_right
+                  +icon('calendar', 'order')
+                  input.form-control.main-filter__input.main-filter__date-from-to.js-drpicker.readonly-date.readonly(type='text' name="date_from_to" placeholder='Даты заезда/отъезда' autocomplete='off' readonly='true')
+
+              //.col-6.col-md-3.col-lg-2.main-filter__item.main-filter__item_date-from.order-sm-2.order-lg-1
+                .input-wrap.icon-wrap.icon-wrap_left
+                  +icon('calendar', 'filter')
+                  input.form-control.main-filter__input.main-filter__date-from.js-drpicker-single.readonly-date(type='text', name="date_from",placeholder='Заезд', readonly='true')
+
+              //.col-6.col-md-3.col-lg-2.main-filter__item.main-filter__item_date-to.order-sm-2.order-lg-1
+                .input-wrap.icon-wrap.icon-wrap_left
+                  +icon('calendar', 'filter')
+                  input.form-control.main-filter__input.main-filter__date-to.js-drpicker-single.readonly-date(type='text', name="date_to", placeholder='Отъезд' readonly='true')
+
+              .col-12.col-md-6.col-lg-2.order-sm-2
+                button.w-100.btn.btn-warning(type="submit") Найти

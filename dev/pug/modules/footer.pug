@@ -1,0 +1,59 @@
+footer.footer
+  .container
+    .row
+      .col-12.col-md-5.col-lg-3.order-2.order-lg-1.d-flex.justify-content-center.justify-content-md-start
+        .footer-company
+          .footer-company__logo
+            a.footer-logo__link(href='/')
+              img(src="static/images/general/logo-footer.png" alt="")
+          .footer-company__copyright
+            span © 2018-2019 Арендамастер.рф
+          .footer-company__contact
+            span г. Ялта, ул. Улица д. 999
+            br.d-block
+            span
+              a.footer-company__phone-link(href="tel:+79788376377") тел.: +7 (978) 837-63-77
+      .col-12.col-md-12.col-lg-7.order-1.order-md-0.order-lg-1
+        .footer-menu.d-flex.justify-content-between.justify-content-lg-end.justify-content-xl-around.flex-column.flex-sm-row.text-center.text-sm-left
+          ul.footer-menu__list
+            li.footer-menu__item: a(class='footer-menu__link selected' href='#') Аренда посуточная
+            li.footer-menu__item: a(class='footer-menu__link' href='#') Аренда на длительный срок
+            li.footer-menu__item: a(class='footer-menu__link' href='#') Аренда автомобиля
+          ul.footer-menu__list
+            li.footer-menu__item: a(class='footer-menu__link' href='/kak-zabronirovat.html') Как забронировать
+            li.footer-menu__item: a(class='footer-menu__link' href='/kak-oplatit.html') Как оплатить
+            li.footer-menu__item: a(class='footer-menu__link' href='#') Такси
+          ul.footer-menu__list
+            li.footer-menu__item: a(class='footer-menu__link' href='#') Отзывы
+            li.footer-menu__item: a(class='footer-menu__link' href='/rekvizity.html') Реквизиты
+            li.footer-menu__item: a(class='footer-menu__link' href='#') Контакты
+      .col-12.col-md-7.col-lg-2.order-3.order-lg-1
+        .row.justify-content-md-between
+          .col-12.col-sm-8.offset-sm-2.offset-md-0.col-md-12.col-lg-12
+            .how-drive
+              button.w-100.btn.btn-outline-secondary Как проехать
+          .col-12.col-md-12.col-lg-12.justify-content-center.justify-content-md-center.justify-content-lg-center.d-flex
+            .developer-logo.js-developer-logo
+              img.developer-logo__image.js-developer-logo__image(src='static/images/general/mylogo.png', alt='RENDERLife', style='display: inline;')
+              img.developer-logo__image_color.js-developer-logo__image_color(src='static/images/general/mylogo-color.png', alt='RENDERLife', style='display: none;')
+              .developer-logo__name
+                a.developer-logo__link(href='http://renderlife.ru' target='_blank')
+                  | RENDER
+                  span.developer-logo__name_red.is-developer-logo__name_red Life
+              a.developer-logo__desc.js-developer-logo__desc(href='http://renderlife.ru', style='display: none;') Разработка сайта
+
+//.toTopButtonWrapper.container.js-toTopButtonWrapper
+  .toTopButton.js-toTopButton
+
+.scrollTop__wrapper
+  .containerOff
+    div
+      button.js-scrollTop.scrollTop.white-block.svg-up-arrow
+
+include ../modules/modals/call-modal
+include ../modules/modals/order-general-modal
+include ../modules/modals/order-modal
+include ../modules/modals/message-modal
+include ../modules/modals/action-confirm-modal
+include ../modules/modals/user-agree-modal
+include ../modules/modals/action-alert.pug

@@ -1,0 +1,93 @@
+// Colors
+$white: #ffffff;
+$orange: #f15a24;
+$black: #000000;
+$black20: #222222;
+$black37: #575757;
+$blackBlue: #4b545b;
+$grayLight: #dbddde;
+$grayLightR: #ebedee;
+$grayLightSep: #c0c0c0;
+$gray: #a5a5a5;
+$gray56: #868686;
+$green: #53b374;
+$greenDark: #3f955d;
+$blue: #2377cc;
+$orangeLite: #ff9d7a;
+//$orangeMegaLite: #ffddcf;
+$orangeMegaLite: #ffe4da;
+$red: #e21717;
+
+// Colors Background
+$blackMenu: #2d3036;
+$whiteMenu: $white;
+$whiteBlock: $white;
+$grayContent: #f2f4f6;
+$orangeBack: $orange;
+
+$greenBackForm: $green;
+
+// Colors Text
+$blackText: $black20;
+$orangeText: $orange;
+$fieldText: $blackBlue;
+$grayText: $gray;
+$grayTextBackWhite: $gray56;
+$grayTextaBackGray: $gray56;
+
+// Colors Link
+$whiteLink: $white;
+$blackLink: $black20;
+$blueLink: $blue;
+$orangeLink: $orange;
+
+// Color forms
+$borderField: $grayLight;
+$colorField: $blackBlue;
+$checked: $green;
+
+// Button
+$whiteTextButton: $white;
+$orangeButton: $orange;
+$greenButton: $green;
+$greenButtonHover: $greenDark;
+
+// Text Button
+$grayButtonTextOnWhite: $black20;
+$grayButtonTextOnGray: $gray56;
+
+// Back Button
+//$blackButton: $black37;
+$grayButtonBackOnWhite: $black37;
+//$grayButtonBackOnGray:;
+
+// Back Hover Button
+$grayButtonBackHoverOnWhite: $grayLightR;
+$grayButtonBackHoverOnGray: $gray56;
+
+// Border Button
+$grayButtonBorderOnWhite: $grayLight;
+$grayButtonBorderOnGray: $gray56;
+
+// Border
+$separate: $grayLightSep;
+$separateOrder: $grayLight;
+
+// Sizes
+$base-font-size: 16px;
+
+// Breadcrumb
+$breadcrumbTextActive: $gray56;
+$breadcrumbText: $gray56;
+$breadcrumbSep: $gray56;
+
+
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+$gutter: $grid-gutter-width;
+
+// Fonts
+$default-font: 'Open Sans', sans-serif;

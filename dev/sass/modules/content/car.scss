@@ -1,0 +1,11 @@
+.catalog-cars-item {
+  &__param {
+    margin-bottom: 0.15rem;
+    &_value {
+      color: $blackText;
+    }
+  }
+  &__section-data {
+  	height: 100%;
+  }
+}

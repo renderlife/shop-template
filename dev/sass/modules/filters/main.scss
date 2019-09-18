@@ -1,0 +1,30 @@
+.filter-back {
+    background: url("../images/general/main-back-filter-04.jpg");
+    max-width: 1920px;
+    height: 430px;
+    background-position: center!important;
+    background-size: cover;
+    padding-top: 134px;
+}
+.slogan-main {
+  font-size: 42px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  color: $white;
+}
+.main-filter {
+  margin: 0 auto;
+  &__item {
+    margin-bottom: 10px;
+  }
+  &__wpap-input {
+
+  }
+  &__price {
+
+  }
+  .btn.btn-warning {
+    padding: 8px 6px 7px;
+  }
+}

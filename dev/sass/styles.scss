@@ -1,0 +1,145 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/font-face";
+@import "utils/fonts";
+@import "rewrite-bootstrap";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $black;
+  color: #fff;
+}
+
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $black;
+  background: $grayContent;
+
+  input,
+  textarea {
+    border: #666 1px solid;
+    outline: none;
+
+    &:focus:required:invalid {
+      border-color: red;
+    }
+
+    &:required:valid {
+      border-color: green;
+    }
+  }
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $blackText;
+  }
+  a {
+    color: $blueLink;
+    &:hover {
+      color: $orangeLink;
+    }
+  }
+  .text-content {
+    a {
+      font-style: normal;
+      line-height: normal;
+      &:hover {
+        color: $orangeLink;
+      }
+    }
+  }
+}
+
+.separator {
+  width: 100%;
+  border-top: 1px solid $grayLightSep;
+  margin: 30px 0 30px 0;
+}
+
+// Общая стилистика - надо выделить отдельный файл
+// например: themes ???
+.svg-sprite-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.white-block {
+  //box-shadow: inset hoff voff blur color;
+  @include shadow_block;
+  padding: 18px;
+  border-radius: 5px;
+  &:hover {
+    @include shadow_block_hover;
+  }
+  &_30 {
+    padding: 30px;
+  }
+}
+.h1 {
+  font-size: 26px;
+  color: $blackText;
+  font-weight: 600;
+}
+.h2 {
+  font-size: 18px;
+  color: $blackText;
+  font-weight: 600;
+}
+.h3 {
+  font-size: 14px;
+  color: $blackText;
+  font-weight: 600;
+}
+.rubl {
+  font-family: "als_rubl";
+}
+.stretched-link {
+  &::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    // Just in case `pointer-events: none` is set on a parent
+    pointer-events: auto;
+    content: "";
+    // IE10 bugfix, see https://stackoverflow.com/questions/16947967/ie10-hover-pseudo-class-doesnt-work-without-background-color
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
+
+// Кнопочка очистки крайней даты
+.clear-date-edge {
+  font-size: 1.7em;
+    width: 1.3em;
+    top: 2px;
+    position: absolute;
+    height: 1.3em;
+    right: 2px;
+    color: #f15a24;
+    outline: none;
+}
+.clear-date-edge:active {
+    color: #222;
+}
+
+
+//Модули
+@import "modules/modules";
+//@import "pages/detail";
+@import "media";
+@import "daterangepicker";
+//@import "fotorama";

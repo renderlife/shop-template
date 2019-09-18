@@ -1,0 +1,172 @@
+.form-control {
+  border: 1px solid $borderField;
+  color: $colorField;
+  font-size: 14px;
+  &:focus {
+    border-color: $orangeLite;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgba(241, 90, 36, 0.24);
+  }
+}
+.custom-select-wrap {}
+.custom-select {
+  font-size: 14px;
+  &:focus {
+    border-color: $orangeLite;
+    outline: 0;
+    box-shadow: 0 0 0 0.15rem rgba(241, 90, 36, 0.24);
+  }
+}
+// Мультиселект
+.bootstrap-select {
+  .dropdown-toggle.btn-light {
+    color: $colorField;
+    background-color: $white;
+    border: 1px solid $borderField;
+    font-size: 14px;
+    height: calc(2.25rem + 2px);
+    line-height: 1.8;
+  }
+  .dropdown-item {
+    font-size: 14px;
+    color: $colorField;
+    &:active {
+      color: $white;
+      background-color: $orange;
+    }
+  }
+  .btn[aria-expanded="true"],
+  .btn:focus,
+  .btn.focus {
+    border-color: #ff9d7a;
+    outline: 0 !important;
+    -webkit-box-shadow: 0 0 0 0.15rem rgba(241, 90, 36, 0.24);
+    box-shadow: 0 0 0 0.15rem rgba(241, 90, 36, 0.24);
+  }
+  .dropdown-item.active, .dropdown-item:active {
+    color: $white;
+    text-decoration: none;
+    background-color: $orange;
+  }
+  .dropdown-item:focus {
+    outline: $orange auto 5px;
+    color: $white;
+    text-decoration: none;
+    background-color: $orange;
+  }
+
+}
+
+.form-control[readonly] {
+  &.readonly-date {
+    background-color: #ffffff;
+    opacity: 1;
+  }
+}
+
+.custom-checkbox {
+   padding-left: 1.8rem;
+
+  .custom-control-input {
+    &:checked~.custom-control-label {
+      &::before {
+        background-color: $greenBackForm;
+        border-color: $greenBackForm;
+      }
+      &::after {
+        left: -26px;
+        background-size: 12px;
+      }
+    }
+  }
+  .custom-control-label {
+    &::before {
+      background-color: transparent;
+      border: 1px solid $borderField;
+      width: 21px;
+      height: 21px;
+      top: 0.1rem;
+      left: -1.8rem;
+      width: 1.31rem;
+      height: 1.31rem;
+    }
+  }
+}
+
+// Фильтр - input - календарь
+.svg-sprite-icon.svg-sprite-icon__calendar_order,
+.svg-sprite-icon.svg-sprite-icon__calendar_filter {
+  width: 1.3em;
+  height: 1.3em;
+}
+// Фильтр - select - персоны
+.svg-sprite-icon.svg-sprite-icon__friends_order,
+.svg-sprite-icon.svg-sprite-icon__friends_filter {
+  width: 1.3em;
+  height: 1.3em;
+}
+
+// Отступ текста справа от иконки
+.icon-wrap_left select.main-filter-form__rooms {
+  padding-left: calc(1.3em + 10px + 8px);
+}
+.icon-wrap_left input.main-filter-form__rooms {
+  padding-left: calc(1.3em + 10px + 8px);
+}
+
+// Отступ текста слева от иконки
+.icon-wrap_right select.main-filter-form__rooms {
+  padding-right: calc(1.3em + 10px + 8px);
+}
+.icon-wrap_right input.main-filter-form__rooms {
+  padding-right: calc(1.3em + 10px + 8px);
+}
+
+// Дропдаун - количество гостей
+.dropdown-menu-person {
+  width: 100%;
+  //display: block;
+  //position: static;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .btn.btn-secondary {
+    font-size: 20px;
+    line-height: 0;
+    width: 37px;
+  }
+  .dropdown-item-text {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.dropdown-item-text {
+  font-size: 14px;
+  &_big {
+    font-size: 14px;
+  }
+  &_small {
+    font-size: 12px;
+    line-height: 15px;
+    color: $grayText;
+  }
+}
+.input-group-plus-minus {
+  width: 115px;
+  input {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.invalid-feedback-absolute {
+  position: absolute;
+}
+.was-validated .invalid-feedback-fake {
+  height: 18px;
+  display: block;
+}
+.invalid-feedback-fake {
+  display: none;
+}

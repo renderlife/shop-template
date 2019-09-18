@@ -1,0 +1,28 @@
+.breadcrumb {
+  background-color: transparent;
+  padding: 12px 0 12px;
+  margin: 12px 0 0 0;
+  &__item {
+    color: $breadcrumbText;
+  }
+  &__item.active {
+    color: $breadcrumbTextActive;
+  }
+  &__link {
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    color: $breadcrumbText;
+  }
+}
+.breadcrumb-item {
+  &:before {
+    color: $breadcrumbSep;
+  }
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    display: inline-block;
+    padding-right: 0.5rem;
+    color: $breadcrumbSep;
+    content: "/";
+}

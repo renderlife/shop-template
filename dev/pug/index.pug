@@ -1,0 +1,11 @@
+extends template/main
+
+block params
+  - var title = 'Главная страница'
+  - var pageClass = 'index-page'
+
+block content
+  include ./modules/filters/main
+  include ./modules/main/fast-links
+  include ./modules/main/popular
+  include ./modules/seo/block

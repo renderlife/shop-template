@@ -1,0 +1,16 @@
+- imageObjects = ['fast-link-1-1.jpg', 'fast-link-2-1.jpg', 'fast-link-3-1.jpg'];
+
+.sections-links-wrap
+  .sections-links.white-block.mt-4.mb-4
+    .row
+      each imgVar in imageObjects
+        - path = "static/images/general/" + imgVar; 
+
+        .sections-links__item.col-12.col-md-4
+          .sections-links__image-wrap
+            img.img-fluid(src=path alt="")
+          .sections-links__data
+            h2.sections-links__title.h2 
+              a(href="/list.html") Аренда посуточно в Ялте
+            .sections-links__desc
+              span.sections-links__seo-text Квартиры посуточно и другие квартиры в Ялте, легко и быстро вы сможете найти квартиру на те даты когда она вам необходима, отсортировать по множеству параметров и забронировать в пару кликов. 

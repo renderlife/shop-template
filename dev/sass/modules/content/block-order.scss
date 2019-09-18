@@ -1,0 +1,190 @@
+.catalog-detail-order {
+  &__price-item {
+    margin-bottom: 5px;
+    position: relative;
+  }
+  &__price-main {
+    margin-bottom: 15px;
+  }
+  &__price {
+    text-align: right;
+    font-size: 26px;
+    &_title {
+      font-weight: normal;
+      font-size: 18px;
+    }
+    &_value {
+      font-weight: 600;
+    }
+    &_rubl {
+    }
+    &_type {
+      font-size: 20px;
+      color: $grayTextBackWhite;
+    }
+    &-name {
+      margin-top: 8px;
+      text-align: left;
+      &_name {
+        line-height: 16px;
+        font-size: 13px;
+      }
+    }
+  }
+  &__price-period {
+    font-size: 18px;
+    &-name {
+      text-align: left;
+      &_name {
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 5px;
+      }
+      &_date {
+        font-size: 12px;
+        line-height: 14px;
+        color: $grayText;
+        margin-bottom: 5px;
+      }
+    }
+    &-val {
+      &_value {
+        font-weight: 600;
+      }
+      &_rubl {
+      }
+      &_type {
+        font-size: 16px;
+        color: $grayTextBackWhite;
+      }
+    }
+  }
+
+  &__separate-space {
+    height: 60px;
+  }
+  &__departure {
+    label {
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+  }
+  &__person {
+    label {
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
+  }
+  &__pre-total {
+    margin-top: 20px;
+    margin-bottom: 7px;
+  }
+  &__separate-total {
+    border-bottom: 1px solid $separateOrder;
+    margin-bottom: 7px;
+  }
+  &__total {
+
+  }
+  &__total-left,
+  &__total-right {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  &__buttons {
+
+  }
+  &__author {
+    margin-top: 30px;
+  }
+  &__author-name {
+    font-size: 16px;
+    line-height: 15px;
+  }
+  &__author-position {
+  }
+  &__author-phone {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    color: $black;
+  }
+  &__author-right {
+    height: 75px;
+    width: 75px;
+  }
+  &__info {
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 15px;
+    color: $grayText;
+  }
+
+  &__reserv-list {
+    margin-top: 20px;
+  }
+  &__reserv-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  &__reserv-item {
+
+  }
+  &__reserv-date {
+    line-height: 1.4;
+    font-size: 14px;
+    &_red {
+      color: $red;
+    }
+    &_green {
+
+    }
+  }
+  &__reserv-separate {
+    border-bottom: 1px solid $separateOrder;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &__reserv-edit {
+    width: 70px;
+  }
+  &__reserv-edit-remove {
+    float: left;
+    .btn {
+      min-width: 37px;
+      font-weight: 700;
+    }
+  }
+  &__reserv-edit-ok {
+    .btn {
+      min-width: 37px;
+      margin-left: 7px;
+      font-weight: 600;
+    }
+  }
+  &__message-arrow-to-date {
+    height: 57px;
+    left: -12px;
+    position: absolute;
+    color: #f15a24;
+    font-style: italic;
+    line-height: 1.3;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    width: 130px;
+    top: 47px;
+    &::after {
+      position: absolute;
+      height: 40px;
+      top: 29px;
+      left: 120px;
+      width: 50px;
+      display: block;
+      content: "";
+      background-repeat: no-repeat;
+      background-image: url(../images/general/arrow.png);
+    }
+  }
+}

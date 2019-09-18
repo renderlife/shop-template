@@ -1,0 +1,69 @@
+header.header
+  .menu-top
+    .container
+      .row
+        .col-9.col-xl-8.d-none.d-lg-flex.menu-top__left
+          - headerTopMenu = [{name: 'Аренда жилья', link: './sections.html'}, {name: 'Аренда автомобиля', link: 'cars.html'}, {name: 'Трансвер (такси) по крыму', link: 'transfer.html'}, {name: 'Отзывы', link: '#'}, {name: 'Контакты', link: 'contact.html'}];
+          ul.menu-top__links
+            - counter = 0;
+            each item in headerTopMenu
+              - counter++;
+              li.menu-top__item: a(class='menu-top__link' href=item.link) #{item.name}
+        .col.col-lg-3.col-xl-4.menu-top__right
+          ul.menu-top__links.menu-top__links_personal
+            li.menu-top__item: a(class='menu-top__link menu-top__link_name' href='#') Евгений Кошелев
+            //li.menu-top__item.mr-0: a(class='menu-top__link menu-top__link_login' href='/personal/login.html')
+              +icon('user-solid', 'menu-top')
+              span.d-inline.d-xl-none Войти
+              span.d-none.d-xl-inline Войти в личный кабинет
+            li.menu-top__item.mr-0: a(class='menu-top__link menu-top__link_login' href='/personal/login.html')
+              +icon('logout', 'menu-top')
+              span.d-inline.d-xl-none Выйти
+              span.d-none.d-xl-inline Выйти
+
+  .header-middle
+    .header-middle__back-mobile-w-100.d-block.d-lg-none
+    .container
+      nav.navbar.header-middle-wrap.navbar-expand-lg.navbar-light.p-0
+        .header-logo
+          a.header-logo__link(href='/')
+            img(src="static/images/general/logo.png" alt="")
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarDropdown__menu', aria-controls='navbarDropdown__menu', aria-expanded='false', aria-label='Toggle navigation')
+          #nav-icon3
+            span
+            span
+            span
+            span
+        #navbarDropdown__menu.navbar-collapse.collapse.header-links
+
+          ul.navbar-nav.header-links__navbar-nav.d-none.d-lg-flex
+            li.nav-item.active
+              a.header-links__link.header-links__link_active(href='/list.html') Аренда посуточная
+            li.nav-item
+              a.header-links__link(href='#') Аренда на длительный&nbsp;срок&nbsp;
+            li.nav-item
+              a.header-links__link(href='#') Коммерческая аренда
+
+          .header-contact
+            .header-contact__phone
+              a(class='header-contact__phone-link' href='tel:84999385055') +7 (978) 837-63-77
+            .header-contact__call
+              a(class='header-contact__call-link' href='#' data-toggle="modal" data-target="#callModal") Закажите звонок
+
+          ul.navbar-nav.d-flex.d-lg-none.nav-fill.w-100.header-links__navbar-nav
+            li.nav-item.header-links__item.header-links__item_dropdown.dropdown
+              a#navbarDropdown__arenda.nav-link.dropdown-toggle.header-links__link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Аренда жилья
+              .dropdown-menu.header-links__dropdown-item(aria-labelledby='navbarDropdown__arenda')
+                .dropdown-divider
+                a.dropdown-item.header-links__dropdown-link.header-links__dropdown-link_active(href='/list.html') Аренда посуточная
+                a.dropdown-item.header-links__dropdown-link(href='#') Аренда на длительный срок
+                a.dropdown-item.header-links__dropdown-link(href='#') Коммерческая аренда
+            li.nav-item.header-links__item
+              a.nav-link.header-links__link.header-links__link_active(href='#') Аренда автомобиля
+            li.nav-item.header-links__item
+              a.nav-link.header-links__link(href='#') Трансвер (такси) по крыму
+            li.nav-item.header-links__item
+              a.nav-link.header-links__link(href='#') Отзывы
+            li.nav-item.header-links__item
+              a.nav-link.header-links__link(href='#') Контакты

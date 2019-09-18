@@ -1,0 +1,49 @@
+@mixin size($a,$b: $a) {
+  width: $a;
+  height: $b;
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin icon($x, $y, $w, $h, $l, $t) {
+  background: transparent url(../../static/images/general/sprite.png) no-repeat scroll $x $y;
+  width: $w;
+  height: $h;
+  left: $l;
+  top: $t;
+  content: "";
+  position: absolute;
+}
+
+%svg-common {
+  background: url("../images/svg/view/svg/sprite.view.svg") no-repeat;
+}
+
+@mixin icon_svg($name, $w, $h, $l, $t, $p1, $p2) {
+  @extend %svg-common;
+  background-position: $p1 $p2;
+  width: $w;
+  height: $h;
+  left: $l;
+  top: $t;
+  content: "";
+  position: absolute;
+}
+
+@mixin shadow_line_back() {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.07);
+}
+
+@mixin shadow_block() {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+  background-color: $whiteBlock;
+}
+@mixin shadow_block_hover() {
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+  background-color: $whiteBlock;
+}

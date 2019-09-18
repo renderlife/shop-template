@@ -1,0 +1,30 @@
+.icon-wrap {
+  position: relative;
+  > .svg-sprite-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: silver;
+  }
+  &_left {
+    & > input,
+    & > select {
+      //padding-left: calc(1em + 10px + 8px);
+      padding-left: calc(1em + 10px + 8px);
+      //height: 2em;
+    }
+    > .svg-sprite-icon {
+      left: 10px;
+    }
+  }
+  &_right {
+    & > input,
+    & > select {
+      //padding-left: calc(1em + 10px + 8px);
+      padding-right: calc(1em + 10px + 8px);
+    }
+    & .svg-sprite-icon {
+      right: 10px;
+    }
+  }
+}

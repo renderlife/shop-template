@@ -1,0 +1,20 @@
+#actionConfirmModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered(role='document')
+    .modal-content
+      .modal-header
+        .h2.modal-title Подтвердите ваше действие
+        button.close(type='button', data-dismiss='modal', aria-label='Закрыть')
+          span(aria-hidden='true') ×
+      .modal-body
+        form.js-confirm-modal-form(novalidate)
+          input(type='hidden', name='action')
+          input(type='hidden', name='status')
+          input(type='hidden', name='id')
+
+          .row
+            .col-md-6
+              .form-group
+                button.w-100.btn.btn-secondary(type="button", data-dismiss="modal") Отменить
+            .col-md-6
+              .form-group
+                button.w-100.btn.btn-success.js-confirm-modal-button(type='submit') Применить

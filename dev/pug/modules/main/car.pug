@@ -1,0 +1,67 @@
+- imageObjects = ['image-list-mini-1.jpg', 'image-list-mini-2.jpg', 'image-list-mini-3.jpg'];
+- imageObjects2 = ['image-list-mini-2.jpg', 'image-list-mini-3.jpg'];
+
+- counter = 0;
+each imgVar in imageObjects
+  - counter++;
+  .white-block.my-4
+    .catalog-list-item.catalog-cars-item
+      .row.flex-column.flex-md-row
+        .col-12.col-md-5.col-lg-3
+          .catalog-list-item__section-image-slider.js-catalog-list-item__section-image-slider
+            - path = "static/images/general/" + imgVar
+            .catalog-list-item__slide.catalog-list-item__js-slide
+              img.img-fluid(data-lazy=path alt="")
+            each imgVar2 in imageObjects2
+              - path = "static/images/general/" + imgVar2
+              .catalog-list-item__slide.catalog-list-item__js-slide
+                img.img-fluid(data-lazy=path alt="")
+          .catalog-list-item__slider-paging-wrap-info
+            span.catalog-list-item__slider-paging-info.js-catalog-list-item__slider-paging-info
+        .col-12.col-md-7.col-lg-9
+          .catalog-list-item__section-data.catalog-cars-item__section-data.row
+
+            .col-12.col-md-7.col-lg-7.col-xl-7.d-flex.flex-column.order-md-0
+              h2.h2.catalog-list-item__title
+                a(href='detail.html').catalog-list-item__title-link.h2
+                  span Jeep Cherokee, 2007
+
+              .catalog-list-item__address
+                span г. Ялта
+
+              .catalog-list-item__desc.d-none.d-lg-block
+                div
+                  p
+                    | Функция многих переменных изоморфна. Теорема Ферма небезынтересно критерий интегрируемости критерий интегрируемости. В соответствии с законом больших чисел, геодезическая линия создает интеграл...
+
+              .catalog-list-item__buttons.row.mt-auto.d-none.d-lg-block
+                .col-12.col-md-6
+                  a.w-100.btn.btn-success(href='#' data-toggle="modal" data-target='#orderGeneralModal') Забронировать
+
+            .col-12.col-lg-2.col-xl-2.order-md-1.order-lg-0
+              .d-flex.catalog-list-item__params.justify-content-between.flex-row.flex-md-row.flex-xl-column.justify-content-lg-start.flex-wrap
+                .catalog-cars-item__param
+                  span.catalog-cars-item__param_value 3.7 л (204 л.с.)
+                .catalog-cars-item__param
+                  span.catalog-cars-item__param_value бензин
+                .catalog-cars-item__param
+                  span.catalog-cars-item__param_value автомат
+                .catalog-cars-item__param
+                  span.catalog-cars-item__param_value 4WD
+                .catalog-cars-item__param
+                  span.catalog-cars-item__param_value 102 тыс. км
+
+            .col-12.d-block.d-lg-none.order-md-1
+              .catalog-list-item__desc.catalog-cars-item__desc
+                div
+                  p
+                    | Функция многих переменных изоморфна. Теорема Ферма небезынтересно критерий интегрируемости критерий интегрируемости. В соответствии с законом больших чисел, геодезическая линия создает интеграл...
+
+            .col-12.col-md-5.col-lg-3.col-xl-3.catalog-list-item__price-wrap.catalog-cars-item__price-wrap.d-flex.flex-column.order-md-0
+              .catalog-list-item__price.catalog-cars-item__price.text-md-right
+                span.catalog-list-item__price_value  1 200
+                span.rubl.catalog-list-item__price_rubl.pl-1 q
+                span.catalog-list-item__price_type  / сутки
+
+            .col-12.col-md-6.catalog-list-item__buttons.mt-auto.d-block.d-lg-none.order-md-1
+              a.w-100.btn.btn-success(href='#' data-toggle="modal" data-target='#orderGeneralModal') Забронировать

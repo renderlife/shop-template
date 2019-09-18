@@ -1,0 +1,161 @@
+.footer {
+  border-top: 1px solid $separate;
+  padding: 35px 0 40px 0;
+  .developer-logo {
+    margin-top: 20px;
+  }
+}
+.footer-company {
+  color: $grayTextaBackGray;
+  &__logo {
+
+  }
+  &__copyright {
+    margin-top: 10px;
+    font-size: 15px;
+  }
+  &__contact {
+    font-size: 15px;
+    margin-top: 5px;
+    line-height: 21px;
+  }
+  &__phone-link {
+    color: $grayTextaBackGray;
+    text-decoration: none;
+    &:hover {
+      color: $grayTextaBackGray;
+      text-decoration: none;
+    }
+  }
+}
+.footer-menu {
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+  &__item {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  &__link {
+    color: $blackLink;
+    font-style: normal;
+    line-height: normal;
+    font-size: 15px;
+    display: inline-block;
+    &:hover {
+      color: $orangeLink;
+      transition: all 250ms ease;
+      text-decoration: underline;
+    }
+    &.selected {
+      font-weight: 600;
+    }
+  }
+}
+.how-drive {}
+.developer-logo {
+  position: relative;
+  width: 147px;
+  &__name {
+    font-size: 20px;
+    left: 36px;
+    position: absolute;
+    top: 0;
+    &_red {
+      color: #aaa;
+    }
+    &_red.__color {
+      color: #ff2d1e;
+    }
+  }
+  &__link {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+  &__desc {
+    font-size: 12px;
+    left: 35px;
+    position: absolute;
+    top: 26px;
+    line-height: 14px;
+    color: #000;
+    display: none;
+  }
+  &:hover {
+    &__image {
+      display: none;
+    }
+  }
+}
+
+// Кнопка вверх
+/*.toTopButtonWrapper {
+  position: fixed;
+  height: 1px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 90px;
+  display: none;
+  z-index: 100;
+}
+.toTopButton {
+  float: right;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border-width: 0;
+  background-color: #666;
+  position: relative;
+  top: -80px;
+  right: -150px;
+  background-image: url(/top.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
+
+// кнопка на верх
+.scrollTop {
+  &__wrapper {
+    display: none;
+    position: fixed;
+    left: 0;
+    bottom: 3vh;
+    width: 100%;
+    height: 1px;
+    z-index: 10;
+    /*@include breakpoint(max-width $screenSm) {
+      bottom: 80px;
+    }*/
+    .container > div {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  right: 25px;
+  bottom: 0px;
+  width: 55px;
+  height: 55px;
+  border: 0;
+  /*@include breakpoint(max-width $screenMd) {
+    width: 60px;
+    height: 60px;
+  }*/
+  &:hover {
+    outline: none;
+  }
+  &:before {
+    @include icon_svg('up-arrow', 40px, 40px, 8px, 13px, 82.96779475982532%, 48.78048780487805%);
+  }
+}
+// /кнопка на верх

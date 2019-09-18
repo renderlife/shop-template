@@ -1,0 +1,19 @@
+.contact-item {
+  &__label {
+    font-weight: 600;
+  }
+}
+.contact {
+  &__location-map {
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+  }
+  &__map-title {
+      margin-top: 15px;
+  }
+  &__image-yalta {
+
+  }
+}
+

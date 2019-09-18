@@ -1,0 +1,126 @@
+.catalog-detail-object {
+  overflow: hidden;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  &__line-top-1 {
+    margin-top: 5px;
+  }
+  &__adres {
+
+  }
+  &__scroll-map-link {
+    margin-left: 20px;
+  }
+  &__line-top-2 {
+  }
+  &__id {
+
+  }
+  &__date {
+    margin-left: 20px;
+  }
+  &__imager {
+    margin-top: 20px;
+  }
+  &__main-params {
+    margin-top: 10px;
+  }
+  &__main-param{
+    margin-top: 10px;
+  }
+  &__params-wrap {
+    padding: 0;
+  }
+  &__params {
+    margin: 0;
+    padding: 0;
+  }
+  &__param {
+    list-style: none;
+    margin-bottom: 7px;
+  }
+  &__param-val-green {
+    color: $green;
+  }
+  &__param-val-red {
+    color: $red;
+  }
+  &__desc {
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  &__location {
+    margin-top: 30px;
+  }
+  &__location-name {
+
+  }
+  &__location-adres {
+    font-size: 15px;
+  }
+  &__location-adres-title {
+    color: $grayTextBackWhite;
+    padding-right: 10px;
+  }
+  &__location-map-wrap {
+    margin-top: 10px;
+    padding-left: 0px;
+    margin-left: -15px;
+    padding-right: 0px;
+  }
+  &__location-map {
+    width: calc(100% + 30px);
+    height: 350px;
+    overflow: hidden;
+  }
+  &__video-name {
+    padding-left: 0px;
+  }
+  &__video {
+    height: 378px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  &__video iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.detail-imager {
+  &__image-main {
+
+  }
+  &__wrap-images-preview {
+    flex-flow: wrap;
+    margin-left: -2px;
+  }
+  &__image-preview {
+    width: 20%;
+    padding-left: 2px;
+    margin-top: 2px;
+  }
+}
+.main-param-detail-object {
+  line-height: 25px;
+  &__name {
+    font-size: 16px;
+    color: $grayTextBackWhite;
+  }
+  &__value {
+    font-size: 22px;
+    color: $blackText;
+    font-weight: 600;
+  }
+}
+.fotorama__fullscreen-icon {
+  background: none no-repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
+  width: 100% !important;
+  height: 100% !important;
+  right: 0 !important;
+  top: 0 !important;
+  z-index: 10 !important;
+}

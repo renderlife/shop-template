@@ -1,0 +1,27 @@
+.catalog-detail-interested {
+  &__item {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  &__title-item {
+    margin-top: 15px;
+    font-size: 16px;
+    display: block;
+  }
+  &__desc {
+    font-size: 12px;
+    line-height: 15px;
+    color: $black37;
+    margin-bottom: 5px;
+  }
+  &__price {
+    font-size: 18px;
+    &_value {
+      font-weight: 600;
+    }
+    &_type {
+      font-size: 18px;
+      color: $grayTextBackWhite;
+    }
+  }
+}

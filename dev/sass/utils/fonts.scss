@@ -1,0 +1,12 @@
+//@import "font-face";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext');
+
+@include font-face("als_rubl", "../fonts/Ruble/rouble-webfont");
+
+//@include font-face("lato-black", "../fonts/Lato/Lato-Black");
+//@include font-face("lato-bold", "../fonts/Lato/Lato-Bold");
+//@include font-face("lato-light", "../fonts/Lato/Lato-Light");
+//@include font-face("lato-medium", "../fonts/Lato/Lato-Medium");
+//@include font-face("lato-regular", "../fonts/Lato/Lato-Regular");
+// @include font-face("roboto", "../fonts/RobotoRegular/RobotoRegular");
+// @include font-face("proxima", "../fonts/ProximaNova/ProximaNova-Regular");

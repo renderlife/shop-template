@@ -1,0 +1,18 @@
+#actionAlert.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered(role='document')
+    .modal-content
+      .modal-header
+        .h2.modal-title.js-modal-title Заголовок окна с сообщением
+        button.close(type='button', data-dismiss='modal', aria-label='Закрыть')
+          span(aria-hidden='true') ×
+      .modal-body
+        p.js-modal-message Текст сообщения
+        form.js-confirm-modal-form(novalidate)
+          
+          .row
+            .col-md-12
+              .form-group
+                button.w-100.btn.btn-secondary.js-action-alert-modal__buttons.js-action-alert-modal__buttons_close(type="button", data-dismiss="modal") Закрыть
+            .col-md-12
+              .form-group
+                button.w-100.btn.btn-success.js-confirm-modal-button.js-action-alert-modal__buttons.js-action-alert-modal__buttons_submit(type='submit') Ок

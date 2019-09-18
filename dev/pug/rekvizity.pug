@@ -1,0 +1,42 @@
+extends template/main
+
+block params
+  - var title = 'Детальная новость'
+  - var pageClass = 'detail-post'
+
+block content
+
+  include ./modules/navigation/breadcrumb
+
+  .container
+    h1.h1 Реквизиты
+
+    .text-content.white-block.my-4
+      .row.requisites
+        .col-12.col-md-5.col-lg-4.requisites__image 
+          img.img-thumbnail(src='static/images/general/tintkoff.jpg', alt='Тинькофф лого')
+        .col-12.col-md-7.col-lg-8
+          .requisites__item
+            span.requisites__title Банк получатель:
+            span.requisites__value  АО "Тинькофф Банк" 
+
+          .requisites__item
+            span.requisites__title Корр. счет:
+            span.requisites__value  30101810145250000974
+
+          .requisites__item
+            span.requisites__title БИК:
+            span.requisites__value  044525974
+
+          .requisites__item
+            span.requisites__title Получатель:
+            span.requisites__value  Недовба Иван Сергеевич
+
+          .requisites__item
+            span.requisites__title Счет получателя:
+            span.requisites__value  40817810200008732540
+
+          .requisites__item
+            span.requisites__title Номер карты получателя:
+            br.d-block.d-md-none
+            span.requisites__value  4377 7237 4167 7680

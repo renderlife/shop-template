@@ -1,0 +1,73 @@
+.map-point-wrap {
+  position: relative;
+}
+.svg-sprite-icon {
+  &__point {
+    bottom: 0;
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    right: -2em;
+  }
+  &__close {
+    fill: #fc5c1c;
+  }
+}
+.popup-map {
+  background: #fff;
+  max-height: 320px;
+  width: 240px;
+  position: relative;
+  -webkit-box-shadow: 2px 2px 0 #333;
+  box-shadow: 2px 2px 0 #333;
+  padding-top: 30px;
+  padding-bottom: 20px;
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    svg {
+      vertical-align:top;
+    }
+  }
+  &__data {
+    font-size: 12px;
+    line-height: 1.3;
+    padding: 10px;
+  }
+  &__name {}
+  &__type {}
+  &__address {}
+  /*&:after {
+    content: '';
+    position: absolute;
+    left: calc(50% - 5px);
+    bottom: -14px;
+    border: 5px solid transparent;
+    border-top: 7px solid #333333;
+  }*/
+}
+ymaps[class*="ground-pane"] {
+    /*-webkit-filter: grayscale(65%) brightness(100%);
+    -moz-filter: grayscale(65%) brightness(100%);
+    -ms-filter: grayscale(65%) brightness(100%);
+    -o-filter: grayscale(65%) brightness(100%);
+    filter: grayscale(65%) brightness(100%);*/
+}
+/*.where-do-i-buy-map-wrapper .title {
+    text-align:center
+}
+.where-do-i-buy-map-wrapper .title .h2{
+    margin-top:45px;
+    margin-bottom:45px
+}
+.where-do-i-buy-map-wrapper .map-holder #map{
+    display:block;
+    width:100%;
+    height:550px
+}*/
+

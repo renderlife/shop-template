@@ -1,0 +1,155 @@
+.catalog-list {
+  &__sort-block {
+    margin-top: 5px;
+  }
+  &__sort-label {
+    padding-right: 5px;
+  }
+  &__sort-dropdown {
+    font-style: normal;
+    line-height: normal;
+    color: $blueLink !important;
+    text-decoration: none;
+    border-bottom: 2px dotted $blueLink;
+    &:hover {
+      text-decoration: none;
+      color: $orangeLink !important;
+      border-bottom: 2px dotted $orangeLink;
+    }
+  }
+  &__dropdown-menu {
+    margin-top: 10px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+.catalog-list-item {
+  &__message-arrow-to-date {
+    width: 190px;
+    right: 15px;
+    position: absolute;
+    color: #f15a24;
+    font-style: italic;
+    line-height: 1.2;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: right;
+    top: 31px;    
+  }  
+  &__section-image-slider {
+    border-radius: 3px;
+    overflow: hidden;
+    //max-height: 186px;
+    & img {
+      width: 100%;
+      border-radius: 3px;
+    }
+  }
+  &__slide:not(:first-child) {
+    display: none;
+  }
+  &__slider-paging-wrap-info {
+    justify-content: center;
+    display: flex;
+  }
+  &__slider-paging-info {
+    position: absolute;
+    bottom: 8px;
+    background: rgba(36, 38, 41, 0.3);
+    min-width: 40px;
+    text-align: center;
+    border-radius: 3px;
+    line-height: 22px;
+    padding: 0 5px;
+    color: hsla(0, 0%, 100%, 0.8);
+  }
+  &__title-link {
+
+  }
+  &__section-data {
+
+  }
+  &__address {
+  }
+  &__params {
+
+  }
+  &__param {
+    color: $grayTextBackWhite;
+    &:nth-child(2) {
+      margin-bottom: 0.4rem;
+    }
+    &_value {
+      color: $blackText;
+    }
+  }
+  &__price {
+    font-size: 18px;
+    &._total {
+      font-size: 16px;
+    }
+    &_title {
+      font-size: 16px;
+    }
+    &_value {
+      font-weight: 600;
+    }
+    &_rubl {
+    }
+    &_type {
+      color: $grayTextBackWhite;
+    }
+  }
+  &__desc {
+    line-height: 19px;
+    overflow: hidden;
+    height: 60px;
+    margin-top: 13px;
+    p {
+      line-height: 19px;
+      margin: 0;
+    }
+    &:before {
+      content: "";
+      float: left;
+      width: 5px;
+      height: 60px;
+    }
+    & > *:first-child {
+      float: right;
+      width: 100%;
+      margin-left: -5px;
+    }
+    &:after {
+      content: "\02026";
+      box-sizing: content-box;
+      float: right;
+      position: relative;
+      top: -22px;
+      left: 98%;
+      width: 3em;
+      margin-left: -3em;
+      padding-right: 5px;
+      text-align: right;
+      background-size: 100% 100%;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), white 50%, white);
+    }
+  }
+  &__buttons {
+    margin-top: 17px;
+    a, button {
+      z-index: 2;
+      position: relative;
+    }
+  }
+  &__date-info {
+    margin-top: 15px;
+    color: $grayTextBackWhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+
+}

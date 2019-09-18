@@ -1,0 +1,872 @@
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
+@include media-breakpoint-down(lg) {
+  .menu-top {
+    &__links {
+      &_personal {}
+    }
+    &__item {
+      margin-right: 20px;
+    }
+    /*&__link {
+      font-size: 14px;
+      &:hover {}
+      &_active {}
+      &_login {
+        .svg-sprite-icon {
+        }
+      }
+    }*/
+  }
+  .header-links {
+    &__navbar-nav {
+      padding-right: 30px;
+    }
+  }
+  .header-contact {
+    text-align: center;
+    width: 235px;
+    &__phone {}
+    &__phone-link {
+      font-size: 20px;
+    }
+  }
+  .inner-filter {
+    .checkbox-group {
+      .custom-checkbox-wrap {
+        padding-right: 5px;
+      }
+    }
+  }
+  .search-result {
+    margin-bottom: 7px;
+  }
+  .more-filter {
+    &__link {
+      font-size: 13px;
+    }
+  }
+  .fast-links {
+    &__image_section-2 {
+      background-position: 83% 50%;
+    }
+    &__image-wrap {
+      height: auto;
+      margin-right: 15px;
+      flex: 0 1 70px;
+    }
+  }
+  .catalog-list-item {
+    &__title {
+      margin-bottom: 0;
+    }
+    &__section-image-slider {}
+    &__section-data {}
+    &__address {
+      font-size: 14px;
+      line-height: 1.4;
+    }
+    &__params {
+      margin-top: 5px;
+    }
+    &__param {
+      line-height: 1.5;
+      &:not(:first-child) {
+        margin-left: 25px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 0;
+      }
+    }
+    &__desc {
+      margin-top: 5px;
+      height: 40px;
+      p {
+        font-size: 13px;
+        line-height: 18px;
+      }
+      &:before {
+        height: 40px;
+      }
+    }
+    &__buttons {
+      margin-top: 5px;
+    }
+    &__date-info {
+      margin-top: 10px;
+    }
+  }
+
+  // Оформление заявки
+  .catalog-detail-order {
+     &__price {
+      &_title {
+      }
+      &_value {
+      }
+      &_rubl {
+      }
+      &_type {
+      }
+      &-name {
+        &_name {
+
+        }
+      }
+    }
+    &__price-period {
+      &-name {
+        width: 45%;
+        &_name {
+        }
+        &_date {
+        }
+      }
+      &-val {
+        &_value {
+        }
+        &_rubl {
+        }
+        &_type {
+        }
+      }
+    }
+  }
+
+  // Дропдаун - количество гостей
+  .dropdown-menu-person {
+    .btn.btn-secondary {
+
+    }
+    .dropdown-item-text {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .footer-company {
+    &__copyright {
+      font-size: 14px;
+    }
+    &__contact {
+      font-size: 14px;
+    }
+  }
+  .footer-menu {
+    &__list {
+      margin-left: 25px;
+      margin-right: 5px;
+    }
+  }
+}
+
+// ≥992px
+@include media-breakpoint-down(md) {
+  .header-middle {
+    &__back-mobile-w-100 {
+      width: 100%;
+      position: absolute;
+      height: 84px;
+      background: $orangeBack;
+    }
+  }
+  .header-logo {
+    background-color: transparent;
+    padding: 19px 0px 19px 20px;
+    &__link {
+      & img {
+        width: 150px;
+        height: auto;
+      }
+    }
+  }
+  .header-links {
+    &__navbar-nav {
+      margin: 15px 0 15px 0;
+      padding: 0;
+    }
+    &__item {
+      &_dropdown {
+        &.show {
+          background-color: $grayContent;
+        }
+      }
+    }
+    &__dropdown-item {
+      padding: 0.1rem 0;
+      margin: 0.1rem 0 1rem;
+      color: $blackLink !important;
+      background-color: transparent;
+      border: none;
+      text-align: center;
+    }
+    &__dropdown-link {
+      &_active {
+        font-weight: 600;
+      }
+    }
+    .dropdown-toggle::after {
+      font-size: 12px;
+      margin-left: 0.7em;
+    }
+    &__link {
+      color: $blackLink !important;
+      font-size: 17px;
+      display: inline-block;
+      text-align: center;
+      padding: 0.5rem 1rem 0;
+      &_active {
+        font-weight: 600;
+      }
+      &:hover{
+        text-decoration: none;
+        color: $orangeLink !important;
+        font-weight: 600;
+      } 
+    }
+  }
+  .header-contact {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    &__phone {
+      display: inline-block;
+    }
+    &__phone-link {
+      font-size: 16px;
+    }
+    &__call {
+      display: inline-block;
+    }
+    &__call-link {
+
+    }
+  }
+  .inner-filter {
+    margin: 0 auto;
+    &__item {
+      margin-bottom: 15px;
+    }
+    &__custom-select {}
+    &__space {
+      margin-top: 15px;
+    }
+    .checkbox-group {
+      .custom-checkbox-wrap {
+        width: 180px;
+        margin-bottom: 10px;
+        padding-right: 15px;
+        /*&:last-child:nth-child(odd) {
+          width: 100%;
+          padding-left: 15px;
+        }*/
+      }
+    }
+  }
+  .filter-back {
+    padding-top: 85px;
+  }
+  .slogan-main {
+    font-size: 40px;
+    margin-bottom: 30px;
+    line-height: 42px;
+  }
+  .fast-links {
+    &__image {
+      background-position: 50% 50%;
+    }
+    &__image-wrap {
+      margin-right: 0px;
+      margin-bottom: 15px;
+      flex: 0 1 100px;
+    }
+  }
+  .catalog-list-item {
+    &__section-image-slider {}
+    &__section-data {}
+    &__price-wrap {
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+    &__price {
+      font-size: 16px;
+    }
+    &__price_type {
+      font-size: 14px;
+    }
+    &__params {
+      margin-top: 7px;
+    }
+    &__param {
+      font-size: 13px;
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+    }
+    &__buttons {
+      margin-top: 10px;
+    }
+    &__date-info {
+      margin-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  .catalog-cars-item {
+    &__price-wrap {
+      margin-top: 0px;
+      line-height: 1.4;
+    }
+    &__price {
+      font-size: 18px;
+    }
+    &__desc {
+      margin-top: 0px;
+    }
+    &__param {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog-detail-object {
+    &__main-param {
+      margin-bottom: 15px;
+    }
+    &__adres {
+      display: inline-block;
+      line-height: 18px;
+    }
+    &__scroll-map-link {
+      margin-left: 0;
+    }
+    &__line-top-2 {
+      margin-top: 10px;
+    }
+    .separator {
+      margin: 20px 0 30px 0;
+    }
+    &__desc {
+      margin-top: 25px;
+      font-size: 14px;
+    }
+  }
+
+  // Дропдаун - количество гостей
+  .input-group-plus-minus {
+    width: 90px;
+  }
+  .dropdown-menu-person {
+    input.form-control {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+    .btn.btn-secondary {
+      font-size: 18px;
+      width: 30px;
+    }
+    .dropdown-item-text {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .footer-company {
+    margin-top: 30px;
+    &__copyright {
+      font-size: 15px;
+    }
+    &__contact {
+      font-size: 15px;
+    }
+  }
+  .footer-menu {
+    &__list {
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  .how-drive {
+    margin-top: 30px;
+  }
+  .developer-logo {
+    margin-top: 20px;
+  }
+  .requisites {
+    &__title {
+      font-size: 14px;
+    }
+    &__value {
+      font-size: 14px;
+    }
+  }
+}
+
+// ≥768px
+@include media-breakpoint-down(sm) {
+  .white-block_30 {
+    padding: 18px;
+  }
+  .menu-top {
+    &__right {
+      padding-left: 15px;
+    }
+    &__links {
+      &_personal {
+        justify-content: space-between;
+      }
+    }
+  }
+  .header-middle {
+    &__back-mobile-w-100 {
+      height: 60px;
+    }
+  }
+  .header-logo {
+    background-color: transparent;
+    padding: 14px 0px 10px 0px;
+    &__link {
+      & img {
+        width: 117px;
+        height: auto;
+      }
+    }
+  }
+  .filter-back {
+    padding-top: 35px;
+  }
+  .inner-filter {
+    .btn.btn-secondary {
+       margin-top: 15px;
+    }
+    .btn.btn-secondary.m0 {
+       margin-top: 15px;
+    }
+  }
+  .slogan-main {
+    font-size: 38px;
+    line-height: 42px;
+  }
+  .fast-links {
+    &__item {
+      &:not(:first-child) {
+        margin-top: 25px;
+      }
+    }
+    &__image-wrap {
+      flex: 0 1 110px;
+    }
+    &__image {
+      background-position: 0% 0%;
+      &_section-1 {
+        background-position: 0% 30%;
+      }
+    }
+  }
+  .catalog-list {
+    &__sort-block {
+      margin-top: 10px;
+    }
+  }
+  .catalog-list-item {
+    max-width: 398px;
+    margin-left: auto;
+    margin-right: auto;
+    &__address {
+      line-height: 2;
+    }
+    &__section-image-slider {
+      margin-bottom: 15px;
+    }
+    &__slider-paging-info {
+      bottom: 25px;
+    }
+    &__section-data {}
+    &__price-wrap {
+      margin-top: 12px;
+      margin-bottom: 5px;
+    }
+    &__price {
+      font-size: 18px;
+    }
+    &__params {}
+    &__param {
+      &:not(:first-child) {
+        margin-left: 0px;
+      }
+    }
+    &__buttons {
+      margin-top: 15px;
+      & > div {
+        &:not(:first-child) {
+          margin-top: 10px;
+        }
+      }
+    }
+    &__date-info {
+      margin-top: 8px;
+      line-height: 1.5;
+      font-size: 14px;
+    }
+    &__message-arrow-to-date {
+      top: 0px;
+    }
+  }
+  .catalog-cars-item {
+    &__price-wrap {
+      margin-top: 10px;
+      line-height: 1.4;
+      margin-bottom: 17px;
+    }
+    &__price {
+      font-size: 20px;
+    }
+    &__desc {
+      margin-top: 10px;
+      height: auto;
+      &:after {
+        display: none;
+      }
+    }
+
+    &__param {
+      margin-bottom: 0px;
+    }
+  }
+  .catalog-detail-order {
+    &__separate-space {
+      height: 30px;
+    }
+    &__message-arrow-to-date {
+      top: 17px;
+      left: -8px;
+    }
+  }
+  .catalog-detail-interested,
+  .catalog-detail-action {
+    &__item {
+      max-width: 398px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .footer {}
+  .footer-company {
+    margin-top: 25px;
+    margin-bottom: 0px;
+    text-align: center;
+    &__copyright {
+      margin-top: 20px;
+      font-size: 16px;
+    }
+    &__contact {
+      font-size: 16px;
+    }
+  }
+  .footer_menu__wrap {
+    .col {
+      flex-basis: 33%;
+    }
+  }
+  .how-drive {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .btn.btn-outline-secondary {
+      font-size: 16px;
+    }
+  }
+  .contact {
+    &__image-yalta {
+      margin-top: 15px;
+    }
+  }
+
+  // Модалки
+ .modal-content {
+    padding: 25px 20px;
+    .modal-header {
+      .modal-title {
+        font-size: 22px;
+      }
+    }
+    .iagreeText {
+      font-size: 12px;
+    }
+  }
+
+  .catalog-cars-item {
+    &__param {
+      width: 49%;
+    }
+  }  
+}
+
+// ≥576px
+@include media-breakpoint-down(xs) {
+  .checkbox-group {
+    .custom-checkbox-wrap {
+      width: 160px;
+      font-size: 12px;
+      margin-bottom: 15px;
+      padding-left: 20px;
+      padding-right: 0px;
+    }
+  }
+  .filter-back {
+    padding-top: 45px;
+  }
+  .slogan-main {
+    font-size: 33px;
+    line-height: 35px;
+  }
+  .footer-menu {
+    &__list {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// ≥330px
+@media (max-width: 330px) {
+  .catalog-detail-order__price {
+    font-size: 21px;
+    line-height: 45px;
+  }
+  .catalog-detail-order__price_value {
+    line-height: 48px;
+  }
+}
+
+// ≥360px
+@media (max-width: 359px) {
+  .checkbox-group .custom-checkbox-wrap.custom-checkbox-wrap-spaser {
+    display: none;
+  }
+}
+
+/*==========  Mobile First  ==========*/
+
+// 576px≤
+@include media-breakpoint-up(sm) {}
+
+// 768px≤
+@include media-breakpoint-up(md) {
+  .col-md-7_custom {
+    padding-right: 7px;
+  }
+  .col-md-5_custom {
+    padding-left: 7px;
+  }
+  // Дропдаун - количество гостей - на главной
+  .main-filter {
+    .dropdown-menu-person {
+      width: 150%;
+    }
+  }  
+  .pagination {
+    .page-link {
+      padding: 0.75rem 1.5rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+// 992px≤ && ≥1200px
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  &__price {
+    &._total {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  .catalog-detail-order {
+    &__price-name {
+      text-align: right;
+    }
+  }
+}
+
+// 768px≤ && ≥992px
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .main-filter {
+    &__item {
+      &_type {
+        flex: 0 0 19%;
+        max-width: 19%;
+      }
+      &_person {
+        flex: 0 0 22%;
+        max-width: 22%;
+      }
+    }
+  }
+  .catalog-detail {
+    .catalog-detail-action,
+    .catalog-detail-order,
+    .catalog-detail-object {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .catalog-detail-object {
+  }
+  .catalog-detail-order {
+    &__author-position {
+      font-size: 13px;
+    }
+    &__author-right {
+      height: 60px;
+      width: 60px;
+    }
+    &__price-name {
+      text-align: right;
+    }
+  }
+  .catalog-list-item {
+    &__message-arrow-to-date {
+      top: 0px; 
+      width: 200px;  
+    } 
+  }
+}
+
+// 992px≤
+@include media-breakpoint-up(lg) {
+  .header-links {
+    display: flex;
+    justify-content: space-between;
+    margin-left: $spacer;
+  }
+  .catalog-list-item {
+    > .row  {
+      > .col-lg-3 {
+        flex: 0 0 28%;
+        max-width: 28%;
+      }
+      > .col-lg-9 {
+        flex: 0 0 72%;
+        max-width: 72%;
+      }
+    }
+  }
+  .col-lg-8_custom {
+    padding-right: 10px;
+  }
+  .col-lg-4__custom {
+    padding-left: 10px;
+  }
+  // Дропдаун - количество гостей - на главной
+  .main-filter {
+    .dropdown-menu-person {
+      width: 170%;
+    }
+    &__item {
+      &_berth,
+      &_rooms {
+        flex: 0 0 17%;
+        max-width: 17%;
+      }
+      &_price-from,
+      &_price-to {
+        flex: 0 0 12%;
+        max-width: 12%;
+      }
+      &_date-to,
+      &_date-from {
+        flex: 0 0 12%;
+        max-width: 12%;
+      }
+      &_date-from-to {
+        flex: 0 0 24%;
+        max-width: 24%;
+      }
+    }
+  }
+  .clear-date-edge {
+    top: 3px;
+  }
+  .inner-filter__date-edge {
+    padding-right: 26px;
+  }
+}
+
+// 1200px≤
+@include media-breakpoint-up(xl) {
+  // Дропдаун - количество гостей - на главной
+  .main-filter {
+    &__item {
+      &_berth,
+      &_rooms {
+        flex: 0 0 14%;
+        max-width: 14%;
+      }
+      &_price-from,
+      &_price-to {
+        flex: 0 0 12%;
+        max-width: 12%;
+      }
+      &_date-to,
+      &_date-from {
+        flex: 0 0 12%;
+        max-width: 12%;
+      }
+      &_date-from-to {
+        flex: 0 0 24%;
+        max-width: 24%;
+      }
+    }
+  }
+  .fast-links {
+    &__image_section-2 {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .no-more-tables table,
+  .no-more-tables thead,
+  .no-more-tables tbody,
+  .no-more-tables th,
+  .no-more-tables td,
+  .no-more-tables tr {
+    display: block;
+  }
+  .no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .no-more-tables tr {
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #9c9c9c;
+  }
+  .no-more-tables td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 45%;
+    white-space: normal;
+    text-align: left;
+  }
+  .no-more-tables td:before {
+    position: absolute;
+    color: $orange;
+    top: 6px;
+    left: 6px;
+    width: 35%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+ .no-more-tables td:before {
+    content: attr(data-title);
+  }
+  .no-more-tables tbody th {
+    display: none;
+  }
+}

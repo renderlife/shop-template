@@ -1,0 +1,46 @@
+.inner-filter-wrap {
+    background-color: $whiteMenu;
+    @include shadow_line_back();
+    padding: 37px 0 25px;
+}
+.inner-filter {
+  margin: 0 auto;
+  &__item {}
+  &__custom-select {}
+  &__space {
+    margin-top: 30px;
+  }
+  .btn.btn-secondary {
+    font-weight: 600;
+  }
+  .checkbox-group .custom-checkbox-wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.search-result {
+  color: $grayText;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.more-filter {
+  text-align: center;
+  &__link {
+    font-style: normal;
+    line-height: normal;
+    color: $blueLink;
+    text-decoration: none;
+    border-bottom: 2px dotted $blueLink;
+    &:hover {
+      text-decoration: none;
+      color: $orangeLink;
+      border-bottom: 2px dotted $orangeLink;
+    }
+  }
+}
+#inner-filter__more {
+  margin-bottom: 15px;
+}

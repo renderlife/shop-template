@@ -1,0 +1,11 @@
+mixin icon(name,mod)
+  if(mod)
+    svg(class="svg-sprite-icon svg-sprite-icon__" + name + " " + "svg-sprite-icon__" + name + '_' + mod)
+      use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+  else
+    svg(class="svg-sprite-icon icon-" + name)
+      use(xlink:href="static/images/svg/symbol/sprite.svg#" + name)
+
+// Пример миксина
+mixin printH(className, text)
+  h1(class=`${className}`).test #{text}

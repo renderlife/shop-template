@@ -1,0 +1,35 @@
+#orderModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+  .modal-dialog.modal-dialog-centered(role='document')
+    .modal-content
+      .modal-header
+        .h1.modal-title Оформление заказа
+        button.close(type='button', data-dismiss='modal', aria-label='Закрыть')
+          span(aria-hidden='true') ×
+      .modal-body
+        form.js-order-modal-form
+          .form-group
+            label
+              input#name.form-control(required type='text', placeholder='Ваше имя', name='name')
+              .valid-feedback Все верно!
+              .invalid-feedback Пожалуйста введите имя
+
+          .form-group
+            label
+              input#email.form-control(required type='tel', pattern="[0-9-+() ]{5,20}", placeholder='Телефон', name='phone')
+              .valid-feedback Все верно!
+              .invalid-feedback Пожалуйста введите телефон от 5 до 20 символов
+
+          .form-group
+            label
+              input#email.form-control(type='email', placeholder='Email', name='email')
+
+          .form-group
+            button.w-100.btn.btn-success.js-order-modal-button(type='submit') Отправить
+
+          //.custom-control.custom-checkbox
+            input#iagreeCheckOrder.custom-control-input(type='checkbox', name='iagree')
+            label.custom-control-label(for='iagreeCheckOrder') Я согласен на обработку&nbsp;
+              a(class="links" href="#") персональных данных
+
+          .iagreeText Нажимая кнопку «Отправить» Вы соглашаетесь на обработку персональных данных согласно&nbsp;
+              a(class="links" href="#") пользовательского соглашения

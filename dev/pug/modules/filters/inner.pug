@@ -1,0 +1,309 @@
+.inner-filter-wrap
+  .container
+    form.inner-filter
+      .row
+        .col-12.col-md-9.col-lg-10
+          .form-row
+            .col-6.col-md-6.col-lg-2.inner-filter__item.order-0
+              .custom-select-wrap
+                //select.custom-select.inner-filter__custom-select.inner-filter__rooms(name="rooms")
+                  option(selected='') Кол-во комнат
+                  option(value='1') 1-комнатные
+                  option(value='2') 2-комнатные
+                  option(value='3') 3-комнатные
+                .bootstrap-select.form-control.js-bootstrap-select-fake
+                  button.btn.dropdown-toggle.bs-placeholder.btn-light(type='button', data-toggle='dropdown', role='button', title='Кол-во комнат', aria-expanded='false')
+                    .filter-option
+                      .filter-option-inner
+                        .filter-option-inner-inner Кол-во комнат
+
+                select.form-control.custom-select.inner-filter__custom-select.inner-filter__rooms.selectpicker(multiple name="rooms" title="Кол-во комнат")
+                  option(value='studia') Студия
+                  option(value='1') 1 комнатная
+                  option(value='2') 2 комнатная
+                  option(value='3') 3 комнатная
+                  option(value='4') 4 комнатная
+                  option(value='5') 5+ комнатные
+
+            .col-6.col-md-6.col-lg-2.inner-filter__item.order-2.order-md-1.order-lg-2
+              .custom-select-wrap
+                //.bootstrap-select.form-control.js-bootstrap-select-fake
+                  button.btn.dropdown-toggle.bs-placeholder.btn-light(type='button', data-toggle='dropdown', role='button', title='Спальных мест', aria-expanded='false')
+                    .filter-option
+                      .filter-option-inner
+                        .filter-option-inner-inner Спальных мест
+
+                select.custom-select.inner-filter__custom-select.inner-filter__berth(name="berth")
+                  option(selected='' value='') Спальных мест
+                  option(value='1') 1
+                  option(value='2') 2
+                  option(value='3') 3
+                  option(value='4') 4
+                  option(value='5') 5
+                  option(value='6') 6
+                  option(value='7') 7
+                  option(value='8') 8
+                  option(value='9') 9
+                  option(value='10') 10
+                  option(value='11') 11
+                  option(value='12') 12
+                  option(value='13') 13
+                  option(value='14') 14
+                  option(value='15') 15
+                  option(value='16') 16
+                  option(value='17') 17
+                  option(value='18') 18
+                  option(value='19') 19
+                  option(value='20') 20
+
+                //select.form-control.custom-select.inner-filter__custom-select.inner-filter__bad.selectpicker(multiple name="BERTH" title="Спальных мест")
+                  //option(value='0' selected='') Спальных мест
+                  option(value='1') 1
+                  option(value='2') 2
+                  option(value='3') 3
+                  option(value='4') 4
+                  option(value='5') 5
+                  option(value='6') 6
+                  option(value='7') 7
+                  option(value='8') 8
+                  option(value='9') 9
+                  option(value='10') 10 и более
+
+            .col-12.col-md-12.col-lg-4.inner-filter__item.order-2
+              .input-wrap.icon-wrap.icon-wrap_right
+                +icon('calendar', 'order')
+                input.form-control.inner-filter__input.inner-filter__date-from-to.js-drpicker.readonly-date.readonly(type='text' name="date_from_to" placeholder='Даты заезда/отъезда' autocomplete='off')
+
+            .col-6.col-md-6.col-lg-2.inner-filter__item.order-2
+              .input-wrap.icon-wrap.icon-wrap_left
+                +icon('ruble', 'filter')
+                input.form-control.inner-filter__input.inner-filter__price(type='tel', name="price_from", placeholder='Цена от' autocomplete='off')
+
+            .col-6.col-md-6.col-lg-2.inner-filter__item.order-2
+              .input-wrap.icon-wrap.icon-wrap_left
+                +icon('ruble', 'filter')
+                input.form-control.inner-filter__input.inner-filter__price-to(type='tel', name="price_to", placeholder='Цена до')
+
+            .inner-filter__space.w-100.order-2
+
+            .col-12.order-2
+              .row.checkbox-group.justify-content-around.justify-content-md-between.justify-content-lg-start
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckYard.custom-control-input(type='checkbox', name="YARD")
+                    label.custom-control-label(for='customCheckYard') Наличие дворика
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckParking.custom-control-input(type='checkbox', name="PARKING")
+                    label.custom-control-label(for='customCheckParking') Парковка
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckNewBuilding.custom-control-input(type='checkbox', name="NEW_BUILDING")
+                    label.custom-control-label(for='customCheckNewBuilding') Новый дом
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckViewInSea.custom-control-input(type='checkbox', name="VIEW_IN_SEA")
+                    label.custom-control-label(for='customCheckViewInSea') Вид на море
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckIsPool.custom-control-input(type='checkbox', name="POOL")
+                    label.custom-control-label(for='customCheckIsPool') С бассейном
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckIsKithen.custom-control-input(type='checkbox', name="KITHEN")
+                    label.custom-control-label(for='customCheckIsKithen') С кухней
+
+            .inner-filter__space.w-100.order-2.d-none.d-lg-block
+
+            #inner-filter__more.col-12.collapse.order-2
+              .row.checkbox-group.justify-content-around.justify-content-md-between.justify-content-lg-start
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckKond.custom-control-input(type='checkbox', name="KOND")
+                    label.custom-control-label(for='customCheckKond') Кондиционер
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckBath.custom-control-input(type='checkbox', name="BATH")
+                    label.custom-control-label(for='customCheckBath') C ванной
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckBalcony.custom-control-input(type='checkbox', name="BALCONY")
+                    label.custom-control-label(for='customCheckBalcony') Балкон
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckWash.custom-control-input(type='checkbox', name="WASH")
+                    label.custom-control-label(for='customCheckWash') Стиральная машина
+
+                .custom-checkbox-wrap
+                  .custom-control.custom-checkbox
+                    input#customCheckSaunas.custom-control-input(type='checkbox', name="SAUNAS")
+                    label.custom-control-label(for='customCheckSaunas') Сауна
+
+                // Если в последнем списке нечетное количество чекбоксов то добавляем заглушку
+                .custom-checkbox-wrap.custom-checkbox-wrap-spaser
+                  .custom-control.custom-checkbox
+
+
+              .inner-filter__space.w-100.order-2
+
+              .form-row
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .custom-select-wrap
+                    select.custom-select.inner-filter__custom-select.inner-filter__floor-from(name="floor_from")
+                      option(value='0') Этаж от
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                      option(value='4') 4
+                      option(value='5') 5
+                      option(value='6') 6
+                      option(value='7') 7
+                      option(value='8') 8
+                      option(value='9') 9
+                      option(value='10') 10
+                      option(value='11') 11
+                      option(value='12') 12
+                      option(value='13') 13
+                      option(value='14') 14
+                      option(value='15') 15
+                      option(value='16') 16
+                      option(value='17') 17
+                      option(value='18') 18
+                      option(value='19') 19
+                      option(value='20') 20
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .custom-select-wrap
+                    select.custom-select.inner-filter__custom-select.inner-filter__floor-to(name="floor_to")
+                      option(value='0') Этаж до
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                      option(value='4') 4
+                      option(value='5') 5
+                      option(value='6') 6
+                      option(value='7') 7
+                      option(value='8') 8
+                      option(value='9') 9
+                      option(value='10') 10
+                      option(value='11') 11
+                      option(value='12') 12
+                      option(value='13') 13
+                      option(value='14') 14
+                      option(value='15') 15
+                      option(value='16') 16
+                      option(value='17') 17
+                      option(value='18') 18
+                      option(value='19') 19
+                      option(value='20') 20
+
+                //.col-6.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__floor-to(type='tel', name="floor_to" placeholder='Этаж до')
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .custom-select-wrap
+                    select.custom-select.inner-filter__custom-select.inner-filter__bedrooms(name="bedrooms")
+                      option(selected='' value='') Кол-во спален
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .custom-select-wrap
+                    select.custom-select.inner-filter__custom-select.inner-filter__bed(name="bed")
+                      option(selected='' value='') Кол-во кроватей
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .custom-select-wrap
+                    select.custom-select.inner-filter__custom-select.inner-filter__bathrooms(name="bathrooms")
+                      option(selected='' value='') Кол-во санузлов
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .custom-select-wrap
+                    .bootstrap-select.form-control.js-bootstrap-select-fake
+                      button.btn.dropdown-toggle.bs-placeholder.btn-light(type='button', data-toggle='dropdown', role='button', title='Тип жилья', aria-expanded='false')
+                        .filter-option
+                          .filter-option-inner
+                            .filter-option-inner-inner Тип жилья
+
+                    select.form-control.custom-select.inner-filter__custom-select.inner-filter__type.selectpicker(multiple name="TYPE" title="Тип жилья")
+                      option(value='1') Квартира
+                      option(value='2') Номер в отеле
+                      option(value='3') Дом, коттедж
+                      option(value='4') Комната
+                      option(value='5') Хостел
+
+              .inner-filter__space.w-100.order-2.d-none.d-lg-block
+
+              .form-row
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__total-area-from(type='tel', name="total_area_from" placeholder='Площадь от')
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__total-area-to(type='tel', name="total_area_to" placeholder='Площадь до')
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__id(type='tel', name="ARTNUMBER" placeholder='ID объекта')
+
+                .col-12.col-md-6.col-lg-2.col-lg-6.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__street(type='text', name="street" placeholder='Улица')
+
+              .inner-filter__space.w-100.order-2.d-none.d-lg-block
+
+              .form-row
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__total-area-from(type='tel', name="total_area_from" placeholder='Площадь от')
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__total-area-to(type='tel', name="total_area_to" placeholder='Площадь до')
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__id(type='tel', name="ARTNUMBER" placeholder='ID объекта')
+
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .input-wrap.icon-wrap.icon-wrap_left
+                    +icon('calendar', 'order')
+                    input.form-control.inner-filter__input.inner-filter__date-from.inner-filter__date-edge.js-drpicker-single.readonly-date(value="", type='text', name='date_edge', placeholder='Крайняя дата', readonly='true')
+                    button.close.clear-date-edge.js-clear-date-edge(type='button')
+                      span(aria-hidden='true') ×
+                      
+                .col-12.col-md-6.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__street(value="", type='text', name='street', placeholder='Улица')
+
+
+                .col-12.col-md-6.col-lg-2.col-lg-2.inner-filter__item
+                  .input-wrap
+                    input.form-control.inner-filter__input.inner-filter__house(type='text', name="house" placeholder='Номер дома')
+
+        .col-12.col-md-3.col-lg-2.pl-lg-0.pl-xl-3
+          button.w-100.btn.btn-secondary.js-btn-secondary-filter(type="submit") Найти
+          .search-result
+            span Найдено:
+            br.d-none.d-md-block.d-xl-none
+            span &nbsp;80 объектов
+          .more-filter: a.more-filter__link.js-more-filter__link(data-toggle='collapse', href='#inner-filter__more', role='button', aria-expanded='false', aria-controls='collapseExample') Расширенный фильтр
+
+// TODO: Прикрутить потом Bootstrap-chosen либо Bootstrap-select.

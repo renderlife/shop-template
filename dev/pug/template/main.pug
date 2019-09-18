@@ -1,0 +1,59 @@
+include ../utils/mixins
+block params
+
+doctype html
+html(lang="ru-RU")
+  head
+    // favicon
+    link(rel='apple-touch-icon', sizes='180x180', href='static/images/general/favicon/apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='static/images/general/favicon/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='static/images/general/favicon/favicon-16x16.png')
+    link(rel='manifest', href='static/images/general/favicon/site.webmanifest')
+    link(rel='mask-icon', href='static/images/general/favicon/safari-pinned-tab.svg', color='#FFF')
+    link(rel='shortcut icon', href='static/images/general/favicon/favicon.ico')
+    meta(name='msapplication-TileColor', content='#2b5797')
+    meta(name='msapplication-config', content='static/images/general/favicon/browserconfig.xml')
+    meta(name='theme-color', content='#ffffff')
+    // service
+    meta(charset="utf-8")
+    // seo meta
+    title #{title}
+    <!--[if IE]>
+    meta(http-equiv='X-UA-Compatible', content="IE = edge")
+    <![endif]-->
+    meta(name="viewport" content="width=device-width,initial-scale=1")
+    meta(name="keywords" content="")
+    link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
+
+    script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+
+    <!--[if lt IE 9]>
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
+    <![endif]-->
+  body(class=pageClass)
+    .wrapper
+      include ../modules/header
+      .content
+        block content
+
+      include ../modules/footer
+    // Скрипты Prod
+    //script(src="static/js/libs.min.js")
+    //script(src="static/js/main.min.js")
+
+    // Скрипты DEV
+    script(src="static/js/libs.min.js")
+    script(src="static/js/yamap.js")
+    script(src="static/js/main.js")
+
+    // Данные для тестирования подсветки забронированных дат в датапикере в форме бронирования на деталке    
+    script.
+      window.mapCoord = $.parseJSON('{"x":"44.497095728236","y":"34.173994714698"}');
+      window.mapType = $.parseJSON('"<span>3-\u043a\u043e\u043c\u043d. \u043a\u0432.<\/span><span>, 100 \u043c<sup>2<\/sup><\/span><span>, 5\/9 \u044d\u0442\u0430\u0436<\/span>"');
+      window.mapAddress = $.parseJSON('"\u0420\u0435\u0441\u043f\u0443\u0431\u043b\u0438\u043a\u0430 \u041a\u0440\u044b\u043c, \u0433. \u042f\u043b\u0442\u0430, \u0443\u043b. \u0414\u0440\u0430\u0436\u0438\u043d\u0441\u043a\u043e\u0433\u043e, \u0434. 2"');
+      window.themePath = $.parseJSON('"\/local\/templates\/main-template"');
+      window.disableDates = $.parseJSON('["03.05.2019","04.05.2019","05.05.2019","29.06.2019","30.06.2019","01.07.2019","02.07.2019","03.07.2019","04.07.2019","05.07.2019","06.07.2019","07.07.2019","08.07.2019","09.07.2019","10.07.2019","11.07.2019","12.07.2019","13.07.2019","14.07.2019","15.07.2019","16.07.2019","17.07.2019","18.07.2019","19.07.2019","20.07.2019"]');
+      window.fromDisableDates = $.parseJSON('["02.05.2019","28.06.2019"]');
+      window.toDisableDates = $.parseJSON('["06.05.2019","21.07.2019"]');
+
+    block script

@@ -1,0 +1,16 @@
+.sections-links {
+  &__item {
+    margin-bottom: 30px;
+  }
+  &__desc {
+    font-size: 14px;
+    line-height: 1.5;
+    color: $blackText;
+  }
+  &__image-wrap {
+    overflow: hidden;
+    border-radius: 3px;
+    margin-bottom: 20px;
+  }
+}
+
