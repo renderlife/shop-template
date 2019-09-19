@@ -8,10 +8,10 @@ let plumber = require('gulp-plumber'),
 
 module.exports = function () {
     $.gulp.task('pug', () => {
-        return $.gulp.src('./dev/pug/*.pug')
+        return $.gulp.src(['./dev/pug/pages/*.pug', './dev/pug/pages/**/*.pug'])
             .pipe(changed('dist', {extension: '.html'}))
             .pipe(gulpif(global.isWatching, cached('pug')))
-            .pipe(pugInheritance({basedir: './dev/pug/', skip: 'node_modules'}))
+            .pipe(pugInheritance({basedir: './dev/pug/pages/', skip: 'node_modules'}))
             .pipe(filter(function (file) {
                 return !/\/_/.test(file.path) && !/^_/.test(file.relative);
             }))

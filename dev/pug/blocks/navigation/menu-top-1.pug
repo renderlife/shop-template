@@ -2,7 +2,7 @@
   .container
     .row
       .col-9.col-xl-8.d-none.d-lg-flex.menu-top__left
-        - headerTopMenu = [{name: 'Главная', link: '/'}, {name: 'Список', link: './list.html'}, {name: 'Детальная', link: 'detail.html'},  {name: 'Пункт меню', link: '#'}, {name: 'Контакты', link: 'contact.html'}];
+        - headerTopMenu = [{name: 'Главная', link: '/'}, {name: 'Каталог', link: '/list.html'}, {name: 'Подкаталог', link: '/sub/list.html'}, {name: 'Детальная', link: '/detail.html'},   {name: 'Контакты', link: '/contact.html'}];
         ul.menu-top__links
           - counter = 0;
           each item in headerTopMenu
