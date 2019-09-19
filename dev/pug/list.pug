@@ -1,22 +1,8 @@
 extends template/main
 
 block params
-  - var title = 'Список объектов'
+  - var title = 'Список товаров'
   - var pageClass = 'list-page'
 
 block content
-  include ./modules/filters/inner
-  include ./modules/navigation/breadcrumb
-  .container.catalog-list.mb-5
-    .row
-      .col-12.col-md-8.col-lg-9
-        h1.h1 Аренда квартир посуточно в Ялте
-      .col-12.col-md-4.col-lg-3.text-left.text-md-right.catalog-list__sort-block
-        span.catalog-list__sort-label Сортировка:
-        btn-group
-          a.catalog-list__sort-dropdown.dropdown-toggle(data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-            | По умолчанию
-          .dropdown-menu.catalog-list__dropdown-menu.dropdown-menu-right
-            a.dropdown-item(href='#') Сначала дорогие
-            a.dropdown-item.active(href='#') Сначала дешевые
-    include ./modules/main/objects
+  include ./blocks/content/list

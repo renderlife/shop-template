@@ -1,0 +1,49 @@
+header.header
+  include ../../blocks/navigation/menu-top-1
+
+  .header-middle
+    .header-middle__back-mobile-w-100.d-block.d-lg-none
+    .container
+      nav.navbar.header-middle-wrap.navbar-expand-lg.navbar-light.p-0
+        .header-logo
+          a.header-logo__link(href='/')
+            img(src="images/general/logo.png" alt="")
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarDropdown__menu', aria-controls='navbarDropdown__menu', aria-expanded='false', aria-label='Toggle navigation')
+          #nav-icon3
+            span
+            span
+            span
+            span
+        #navbarDropdown__menu.navbar-collapse.collapse.header-links
+
+          ul.navbar-nav.header-links__navbar-nav.d-none.d-lg-flex
+            li.nav-item.active
+              a.header-links__link.header-links__link_active(href='/list.html') Меню главное
+            li.nav-item
+              a.header-links__link(href='#') Меню главное
+            li.nav-item
+              a.header-links__link(href='#') Меню главное
+
+          .header-contact
+            .header-contact__phone
+              a(class='header-contact__phone-link' href='tel:84999385055') +7 (999) 999-99-99
+            .header-contact__call
+              a(class='header-contact__call-link' href='#' data-toggle="modal" data-target="#callModal") Закажите звонок
+
+          ul.navbar-nav.d-flex.d-lg-none.nav-fill.w-100.header-links__navbar-nav
+            li.nav-item.header-links__item.header-links__item_dropdown.dropdown
+              a#navbarDropdown__arenda.nav-link.dropdown-toggle.header-links__link(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                | Меню с вложением
+              .dropdown-menu.header-links__dropdown-item(aria-labelledby='navbarDropdown__arenda')
+                .dropdown-divider
+                a.dropdown-item.header-links__dropdown-link.header-links__dropdown-link_active(href='/list.html') Меню выпадающее
+                a.dropdown-item.header-links__dropdown-link(href='#') Меню выпадающее
+                a.dropdown-item.header-links__dropdown-link(href='#') Меню выпадающее
+            li.nav-item.header-links__item
+              a.nav-link.header-links__link.header-links__link_active(href='#') Меню мобильное
+            li.nav-item.header-links__item
+              a.nav-link.header-links__link(href='#') Меню мобильное
+            li.nav-item.header-links__item
+              a.nav-link.header-links__link(href='#') Меню мобильное
+            li.nav-item.header-links__item
+              a.nav-link.header-links__link(href='#') Контакты

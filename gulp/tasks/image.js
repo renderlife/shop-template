@@ -3,9 +3,9 @@ let imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     cache = require('gulp-cache'),
     imgPATH = {
-        "input": ["./dev/static/images/**/*.{png,jpg,gif,svg,webmanifest,xml,ico}",
-            '!./dev/static/images/svg/*'],
-        "ouput": "./build/static/images/"
+        "input": ["./dev/images/**/*.{png,jpg,gif,svg,webmanifest,xml,ico}",
+            '!./dev/images/svg/*'],
+        "ouput": "./build/images/"
     };
 
 module.exports = function () {

@@ -1,0 +1,21 @@
+.menu-top
+  .container
+    .row
+      .col-9.col-xl-8.d-none.d-lg-flex.menu-top__left
+        - headerTopMenu = [{name: 'Главная', link: '/'}, {name: 'Список', link: './list.html'}, {name: 'Детальная', link: 'detail.html'},  {name: 'Пункт меню', link: '#'}, {name: 'Контакты', link: 'contact.html'}];
+        ul.menu-top__links
+          - counter = 0;
+          each item in headerTopMenu
+            - counter++;
+            li.menu-top__item: a(class='menu-top__link' href=item.link) #{item.name}
+      .col.col-lg-3.col-xl-4.menu-top__right
+        ul.menu-top__links.menu-top__links_personal
+          li.menu-top__item: a(class='menu-top__link menu-top__link_name' href='#') Имя Фамилия
+          //li.menu-top__item.mr-0: a(class='menu-top__link menu-top__link_login' href='/')
+            +icon('user-solid', 'menu-top')
+            span.d-inline.d-xl-none Войти
+            span.d-none.d-xl-inline Войти в личный кабинет
+          li.menu-top__item.mr-0: a(class='menu-top__link menu-top__link_login' href='/')
+            +icon('logout', 'menu-top')
+            span.d-inline.d-xl-none Выйти
+            span.d-none.d-xl-inline Выйти

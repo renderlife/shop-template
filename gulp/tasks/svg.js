@@ -3,8 +3,8 @@ let svgSprite = require('gulp-svg-sprite'),
     cheerio = require('gulp-cheerio'),
     replace = require('gulp-replace'),
     svgPath = {
-        "input": "./dev/static/images/svg/*.svg",
-        "output": "./build/static/images/svg/"
+        "input": "./dev/images/svg/*.svg",
+        "output": "./build/images/svg/"
     };
 
 module.exports = function () {

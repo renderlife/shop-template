@@ -1,19 +1,8 @@
 extends template/main
 
 block params
-  - var title = 'Детальная страница объекта'
+  - var title = 'Детальная страница товара'
   - var pageClass = 'detail-page'
 
 block content
-  include ./modules/filters/inner
-  include ./modules/navigation/breadcrumb
-  .container.catalog-detail.mb-5
-    .row
-      .col-12.col-md-7.col-md-7_custom.col-lg-8.col-lg-8_custom.my-2
-        include ./modules/main/detail-object
-      .col-12.col-md-5.col-md-5_custom.col-lg-4.col-lg-4__custom.my-2
-        include ./modules/main/detail-order
-        include ./modules/main/detail-banner
-    .row
-      .col-12.mt-3
-        include ./modules/main/detail-interested
+  include ./blocks/content/detail
