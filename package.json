@@ -34,7 +34,7 @@
     "gulp-wait": "0.0.2",
     "imagemin-jpeg-recompress": "^5.1.0",
     "imagemin-pngquant": "^6.0.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lazyload": "^2.0.0-rc.2",
     "slick-carousel": "^1.8.1"
   },
